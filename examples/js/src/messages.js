@@ -87,3 +87,13 @@ if (require.main === module) {
   i18n.activate("cs")
   main()
 }
+
+const count = 11
+const value = 11
+
+plural(count, {one: '# image', 'other': '# images'})
+plural(value, {one: '# image', 'other': '# images'})
+plural(11, {one: '# image', 'other': '# images'})
+plural(11, {one: '# image', 'other': '# images'})
+plural(parseInt(count), {one: '# image', 'other': '# images'})
+plural(parseInt(value), {one: '# image', 'other': '# images'})
